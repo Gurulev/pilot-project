@@ -58,10 +58,17 @@ ul > li {
 	display: flex;
 	align-items: center;
 	background-color: var(--white);
+
 }
 .logo {
+	position: relative;
 	flex: 20%;
 	height: auto;
+}
+.dark {
+	position: absolute;
+	left: 0;
+	opacity: 0;
 }
 .logo img {
 	width: 100%;
@@ -327,17 +334,19 @@ iframe {
 	.topnav {
 		display: initial;
 	}
+	.active-tn img {
+		margin: initial;
+	}
 	.nav {
 	display: none;
-	/*flex-direction: column;
-	text-align: center;
-	position: initial;
 	}
-	.nav a {
-	transform: translate(0);
-	padding: 1% 0;
-	font-size: 1em;
-	}*/
-}
+	@media screen and (max-width: 640px) and (prefers-color-scheme: dark) {
+		.dark {
+			opacity: 1;
+		}
+		.light {
+			opacity: 0;
+		}
 
+	}
 
