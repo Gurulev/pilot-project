@@ -363,8 +363,11 @@ iframe {
 			color: var(--white);
 		}
 		.topnav {
-			background-color: var(--yellow);
+			background-color: var(--black);
 			color: var(--black);
+		}
+		#myLinks {
+			background-color: var(--yellow);
 		}
 		.footer {
 			background-color: var(--yellow);
