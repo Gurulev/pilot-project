@@ -136,12 +136,15 @@ ul > li {
   width: 40px;
   height: 40px;
 }
-
-.topnav a:hover:not(.now) {
+.topnav a:visited:not(.now, .icon) {
   background-color: var(--white);
   color: var(--black);
 	}
-.topnav a:active:not(.now) {
+.topnav a:hover:not(.now, .icon) {
+  background-color: var(--white);
+  color: var(--black);
+	}
+.topnav a:active:not(.now, .icon) {
 	background-color: var(--turquoise);
 	color: var(--white);
 }
