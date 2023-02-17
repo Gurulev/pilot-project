@@ -365,6 +365,7 @@ iframe {
 		.topnav {
 			background-color: var(--black);
 			color: var(--black);
+			border-radius: 0;
 		}
 		#myLinks {
 			background-color: var(--yellow);
