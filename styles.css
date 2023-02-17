@@ -136,10 +136,7 @@ ul > li {
   width: 40px;
   height: 40px;
 }
-.topnav a:visited:not(.now, .icon) {
-  background-color: var(--white);
-  color: var(--black);
-	}
+
 .topnav a:hover:not(.now, .icon) {
   background-color: var(--white);
   color: var(--black);
@@ -271,7 +268,7 @@ iframe {
   position: fixed; /* Позиция фиксированная */
   bottom: 2vh; /* Отступ снизу */
   right: 1vw; /* Отступ справа*/
-  z-index: 99; /* Полажение поверх всех элементов */
+  z-index: 99; /* Положение поверх всех элементов */
   border: 0.3em solid var(--black); /* Удаление границы */
   outline: none; /* Удаление контура */
   cursor: pointer; /* Установка курсора мыши */
