@@ -212,6 +212,7 @@ img {vertical-align: middle;}   /*Возможно будет конфликт*/
 	grid-area: section;
 	margin: auto;
 	padding-bottom: 3%;
+	overflow-x: scroll;
 }
 .footer {
 	grid-area: footer;
@@ -246,6 +247,7 @@ table, th, td{
 	border: 1px solid var(--black);
 	padding: 0.5em;
 }
+
 caption {
 	font-size: 1.2em;
 	font-weight: bold;
@@ -255,6 +257,7 @@ caption {
 /*Стили для price*/
 iframe {
 	display: block;
+	width:50%;
 	margin: 3% auto 0;
 	border: none;
 	border-radius: 2px;
@@ -325,7 +328,10 @@ iframe {
 	float: initial;
 	margin: 0;
 	}
-    iframe {
+	caption {
+		width: 100vw;
+	}
+  iframe {
 		width: 100%;
 	}
 	address {
@@ -334,8 +340,13 @@ iframe {
 	.topnav {
 		display: initial;
 	}
+	.logo img {
+		margin: initial;
+		display: initial;
+	}
 	.active-tn img {
 		margin: initial;
+		display: initial;
 	}
 	.nav {
 	display: none;
@@ -347,6 +358,32 @@ iframe {
 		.light {
 			opacity: 0;
 		}
+		body, .active-tn, .header, .active-tn a {
+			background-color: var(--black);
+			color: var(--white);
+		}
+		.topnav {
+			background-color: var(--yellow);
+			color: var(--black);
+		}
+		.footer {
+			background-color: var(--yellow);
+			color: var(--black);
+		}
+		table, th, td {
+			border: 1px solid var(--white);
+		}
+		#myBtn {
+			border-color: var(--gray);
+		}
+		.animation-up {
+			filter: invert(70%);
+		}
+		.icon img {
+			filter: invert(1);
+		}
+		
+
 
 	}
 
